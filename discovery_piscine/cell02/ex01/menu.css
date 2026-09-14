@@ -1,0 +1,37 @@
+select {
+    text-align: center;
+    scrollbar-width: none;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: powderblue;
+}
+
+.sandwich-with-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bread {
+    background-color: rgb(158, 73, 73);
+}
+
+.tomato {
+    background-color: rgb(199, 45, 45);
+}
+
+.cheese {
+    background-color: rgb(230, 230, 111);
+}
+
+.ham {
+    background-color: rgb(228, 134, 150);
+}
+
+.pickle {
+    background-color: rgb(124, 204, 124);
+}
