@@ -32,11 +32,26 @@ body, html {
 }
 
 .parallax p {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.black-box {
+    background-color: black;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.black-box p {
+    margin: 0px;
 }
 
 .top-image {
-    --bg: url("https://static.wikia.nocookie.net/yugioh/images/d/d8/Live%E2%98%86TwinsKisikil-Lilla-mat.png/revision/latest?cb=20200928223811")
+    --bg: url("https://i.redd.it/nayiurs83qnc1.jpeg")
 }
 
 .bottom-image {
