@@ -10,6 +10,7 @@ submit.addEventListener('click', () => {
     if (isNaN(l) || isNaN(r) || l < 0 || r < 0) {
         alert('Error :(');
         console.log('Error :(');
+        return;
     }
 
     operate(l, r);
