@@ -10,13 +10,14 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="cleangba.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg sticky-top py-3 custom-navbar">
+<body class="min-vh-100 d-flex flex-column m-0">
+    <nav class="navbar navbar-expand-lg sticky-top py-3 bandbar">
         <div class="container-fluid">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 align-items-center">
@@ -46,7 +47,7 @@
         </div>
     </nav>
 
-    <section id="about" class="hero-section container-fluid py-0 my-0">
+    <section id="about" class="hero-section container-fluid py-0 my-0 flex-grow-1">
         <div class="row align-items-stretch">
             <div class="col-12 col-md-4 profile-column">
                 <img src="https://s.isanook.com/ns/0/ui/1828/9141458/gal-9141458-20231214110756-48b85b0.jpeg"
@@ -68,7 +69,7 @@
         </div>
     </section>
 
-    <section id="showcase" class="py-4">
+    <section id="showcase" class="py-5 container flex-grow-1">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-2">Project Showcase</h2>
@@ -78,11 +79,10 @@
             </div>
         </div>
 
-        <!-- Project Card -->
         <div class="row g-4 px-5">
             <!-- Card 1 -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 showcase-card border-secondary-subtle">
+                <div class="card h-100 showcase-card">
                     <div class="card-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
                             class="card-img-top" alt="Analytics Dashboard">
@@ -91,13 +91,13 @@
                         <h3 class="card-title h5 text-white fw-bold mb-3">Realtime Analytics Platform</h3>
                         <div class="d-flex flex-wrap gap-2 mt-auto">
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">React</span>
+                                class="badge rounded-pill badge-color">React</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">TypeScript</span>
+                                class="badge rounded-pill badge-color">TypeScript</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Node.js</span>
+                                class="badge rounded-pill badge-color">Node.js</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Bootstrap</span>
+                                class="badge rounded-pill badge-color">Bootstrap</span>
                         </div>
                     </div>
                 </div>
@@ -114,13 +114,13 @@
                         <h3 class="card-title h5 text-white fw-bold mb-3">AI Knowledge Engine</h3>
                         <div class="d-flex flex-wrap gap-2 mt-auto">
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Python</span>
+                                class="badge rounded-pill badge-color">Python</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">FastAPI</span>
+                                class="badge rounded-pill badge-color">FastAPI</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">OpenAI</span>
+                                class="badge rounded-pill badge-color">OpenAI</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Vector
+                                class="badge rounded-pill badge-color">Vector
                                 DB</span>
                         </div>
                     </div>
@@ -138,95 +138,95 @@
                         <h3 class="card-title h5 text-white fw-bold mb-3">Headless Commerce Core</h3>
                         <div class="d-flex flex-wrap gap-2 mt-auto">
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Next.js</span>
+                                class="badge rounded-pill badge-color">Next.js</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">GraphQL</span>
+                                class="badge rounded-pill badge-color">GraphQL</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">PostgreSQL</span>
+                                class="badge rounded-pill badge-color">PostgreSQL</span>
                             <span
-                                class="badge rounded-pill bg-indigo-subtle text-indigo-emphasis border border-indigo-subtle">Docker</span>
+                                class="badge rounded-pill badge-color">Docker</span>
                         </div>
                     </div>
                 </div>
             </div>
+    </section>
 
-            <div class="container my-5 position-relative z-1">
-                <hr class="glow-divider">
-            </div>
+    <div class="container my-5 position-relative z-1">
+        <hr class="glow-divider">
+    </div>
 
-            <!-- Contact Section -->
-            <section id="contact" class="py-5 px-3 px-md-5 position-relative z-1">
-                <div class="container" style="max-width: 1000px;">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 px-3 px-md-5 position-relative z-1 container flex-grow-1">
+        <div class="container" style="max-width: 1000px;">
+            <div class="contact-box rounded-4 p-4 p-md-5">
+                <div class="row g-4 align-items-center">
 
-                    <!-- Outer Rounded Box with Subtle Outline -->
-                    <div class="contact-box rounded-4 p-4 p-md-5 border border-secondary-subtle">
-                        <div class="row g-4 align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-12 col-md-6">
+                        <p class="text-gray-500 mb-0 fw-semibold">
+                            Here are some way you can
+                        </p>
+                        <h2 class="display-4 fw-bold text-white mb-2">Contact Me</h2>
+                    </div>
 
-                            <!-- Left Column: Big Heading & Subtitle -->
-                            <div class="col-12 col-md-6">
-                                <h2 class="display-4 fw-bold text-white mb-2">Contact Me</h2>
-                                <p class="text-secondary mb-0">
-                                    Have a project in mind or want to collaborate? Feel free to reach out across any of
-                                    these platforms.
-                                </p>
-                            </div>
+                    <!-- Right Column -->
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column gap-3 ps-md-4">
 
-                            <!-- Right Column: Contact Links with Logos -->
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex flex-column gap-3 ps-md-4">
-
-                                    <!-- Gmail -->
-                                    <a href="mailto:your.email@gmail.com"
-                                        class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
-                                        <div
-                                            class="icon-shape rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-envelope-fill fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <div class="text-white fw-semibold">Email</div>
-                                            <div class="text-secondary small">your.email@gmail.com</div>
-                                        </div>
-                                        <i class="bi bi-arrow-up-right ms-auto text-secondary"></i>
-                                    </a>
-
-                                    <!-- GitHub -->
-                                    <a href="https://github.com/yourusername" target="_blank"
-                                        class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
-                                        <div
-                                            class="icon-shape rounded-circle bg-light bg-opacity-10 text-white d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-github fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <div class="text-white fw-semibold">GitHub</div>
-                                            <div class="text-secondary small">github.com/yourusername</div>
-                                        </div>
-                                        <i class="bi bi-arrow-up-right ms-auto text-secondary"></i>
-                                    </a>
-
-                                    <!-- Discord -->
-                                    <a href="https://discord.com" target="_blank"
-                                        class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
-                                        <div
-                                            class="icon-shape rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-discord fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <div class="text-white fw-semibold">Discord</div>
-                                            <div class="text-secondary small">@yourusername</div>
-                                        </div>
-                                        <i class="bi bi-arrow-up-right ms-auto text-secondary"></i>
-                                    </a>
-
+                            <!-- Gmail -->
+                            <div
+                                class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
+                                <div
+                                    class="icon-shape rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-envelope-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold">Email</div>
+                                    <div class="text-secondary small">bubzaza123@gmail.com</div>
                                 </div>
                             </div>
 
+                            <!-- GitHub -->
+                            <a href="https://github.com/HelpImLost123"
+                                class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
+                                <div
+                                    class="icon-shape rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-github fs-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-dark fw-semibold">GitHub</div>
+                                    <div class="text-secondary small">github.com/HelpImLost123</div>
+                                </div>
+                            </a>
+
+                            <!-- Discord -->
+                            <div
+                                class="contact-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none border border-secondary-subtle">
+                                <div
+                                    class="icon-shape rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-discord fs-5"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold">Discord</div>
+                                    <div class="text-secondary small">@babu_</div>
+                                </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-            </section>
-        </div>
+            </div>
     </section>
+
+    <footer class=" bandbar">
+        <div class="container-fluid d-flex align-items-end justify-content-center gap-3 p-3">
+            <span class="fs-5 fw-semibold">
+                "You have reached the end, rest here"
+            </span>
+            <img src="https://media.tenor.com/giNrzT0tQGsAAAAj/bonfire-dark-souls.gif"
+                alt="Resting GIF" class="footer-gif">
+        </div>
+    </footer>
 </body>
 
 </html>
